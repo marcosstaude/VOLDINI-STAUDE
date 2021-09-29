@@ -1,0 +1,328 @@
+.header {
+  background-image: linear-gradient(white, grey, #af0909);
+  height: 6rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1rem;
+  padding-right: 3rem;
+  transition: height 1s; }
+  .header:hover {
+    height: 7rem; }
+  .header__imgVoldini {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 2vw;
+    margin-left: 1rem; }
+
+.nav2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .nav2__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .nav2__li {
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    margin: 0 1rem; }
+  .nav2__a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif; }
+    .nav2__a:hover {
+      color: black; }
+  .nav2 ul li:hover ul {
+    display: block;
+    background-color: #b6aeae;
+    font-family: sans-serif;
+    height: 5rem; }
+    .nav2 ul li:hover ul a {
+      text-decoration: none;
+      color: black;
+      height: 6rem; }
+      .nav2 ul li:hover ul a:hover {
+        color: red; }
+  .nav2 ul ul {
+    position: absolute;
+    display: none; }
+    .nav2 ul ul li {
+      display: block; }
+  .nav2 i {
+    color: black; }
+
+main {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-image: linear-gradient(#d3d2d2, #9b9797, #0c0b0b); }
+  main h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  main p {
+    color: black;
+    font-family: sans-serif;
+    font-size: larger;
+    letter-spacing: 2.8px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 1rem; }
+  main .asideCarousel {
+    margin-left: 15rem;
+    margin-right: 15rem; }
+
+.mainProductos {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .mainProductos table {
+    margin-bottom: 3rem;
+    margin-top: 2rem; }
+  .mainProductos th {
+    color: red;
+    font-family: sans-serif; }
+  .mainProductos .colorTh {
+    color: seagreen;
+    font-family: sans-serif; }
+  .mainProductos td {
+    color: black;
+    font-family: sans-serif; }
+  .mainProductos .colorTd {
+    color: #313335;
+    font-family: sans-serif; }
+  .mainProductos h3 {
+    font-family: sans-serif;
+    color: black;
+    font-weight: 100;
+    text-align: center; }
+  .mainProductos .imgProducto {
+    width: 25rem;
+    height: 20rem; }
+
+.containerInnovacion, .flex-conteinerEmpresa {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 3rem 0; }
+  .containerInnovacion__p {
+    margin-bottom: 7rem;
+    margin-right: 5rem; }
+  .containerInnovacion__imgInnovacion {
+    height: 40%;
+    width: 40%; }
+
+.flex-conteinerEmpresa p {
+  margin-bottom: 6rem;
+  margin-right: 5rem; }
+
+.flex-conteinerEmpresa video {
+  height: 50%;
+  width: 50%; }
+
+.formContacto {
+  text-align: left;
+  margin: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: row; }
+  .formContacto fieldset {
+    font-family: sans-serif;
+    padding: 2rem 2rem 2rem 2rem;
+    height: 48rem;
+    width: 25rem;
+    margin-top: 3rem;
+    margin-left: 5rem; }
+  .formContacto textarea {
+    height: 15rem;
+    width: 20rem; }
+  .formContacto__p {
+    margin: 0;
+    font-size: 15px;
+    color: firebrick;
+    text-align: left; }
+  .formContacto .form {
+    background-image: radial-gradient(white, grey); }
+  .formContacto iframe {
+    height: 40rem;
+    width: 40rem;
+    padding-top: 3rem;
+    padding-left: 4rem; }
+
+.footer {
+  height: 6rem;
+  background-image: linear-gradient(grey, white);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: sans-serif; }
+  .footer h2 {
+    text-align: left;
+    position: relative; }
+  .footer__colorParrafos {
+    text-align: right;
+    margin: 0; }
+  .footer i {
+    color: black;
+    font-size: 2rem; }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-image: linear-gradient(white, grey, #af0909);
+    height: 15rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+    padding-right: 3rem;
+    transition: height 1s; }
+    .header:hover {
+      height: 16rem; }
+    .header__imgVoldini {
+      width: 14rem;
+      height: 3rem;
+      margin-top: 2vw;
+      margin-left: 6rem; }
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0; }
+    .nav2__ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding-bottom: 1rem; }
+    .nav2__li {
+      list-style: none;
+      display: inline-block;
+      width: 20%;
+      position: relative;
+      margin: 0 1rem; }
+    .nav2__a {
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif; }
+    .nav2 ul li:hover ul {
+      display: block;
+      background-color: #ccc4c4;
+      font-family: sans-serif;
+      color: black; }
+    .nav2 ul ul {
+      position: absolute;
+      display: none; }
+      .nav2 ul ul li {
+        display: block; }
+    .nav2 i {
+      color: black; }
+  main {
+    margin: 0;
+    padding-top: 16rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: linear-gradient(#d3d2d2, #9b9797, #0c0b0b); }
+    main .asideCarousel {
+      margin-left: 1rem;
+      margin-right: 1rem; }
+  .mainProductos .imgProducto {
+    width: 20rem;
+    height: 15rem; }
+  .containerInnovacion, .flex-conteinerEmpresa {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3rem 0; }
+    .containerInnovacion__p {
+      margin-bottom: 0;
+      margin-right: 0;
+      text-align: center; }
+    .containerInnovacion__imgInnovacion {
+      padding-top: 2rem;
+      margin-right: 2rem;
+      height: 15rem;
+      width: 15rem; }
+  .flex-conteinerEmpresa {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    .flex-conteinerEmpresa p {
+      margin-bottom: 0;
+      margin-right: 0;
+      text-align: left; }
+    .flex-conteinerEmpresa video {
+      height: 20rem;
+      width: 20rem;
+      padding-top: 1rem;
+      margin-left: 2rem; }
+  .formContacto {
+    text-align: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .formContacto fieldset {
+      font-family: sans-serif;
+      padding: 1rem 1rem 1rem 1rem;
+      height: 48rem;
+      width: 18rem;
+      margin-top: 1rem;
+      margin-left: 2rem; }
+    .formContacto textarea {
+      height: 10rem;
+      width: 15rem; }
+    .formContacto__p {
+      margin: 0;
+      font-size: 15px;
+      color: firebrick;
+      text-align: left; }
+    .formContacto .form {
+      background-image: radial-gradient(white, grey); }
+    .formContacto iframe {
+      height: 25rem;
+      width: 20rem;
+      padding-top: 3rem;
+      padding-left: 2rem; }
+  .footer {
+    height: 16rem;
+    text-align: center;
+    background-color: #a8a8a8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0rem;
+    padding-top: 1rem;
+    align-items: center; } }
