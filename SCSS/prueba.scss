@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .header{
 
@@ -116,6 +121,7 @@ main{
         animation-name: aparecer;
         animation-duration: 2s;
         color: black;
+        
     }
 
     @keyframes aparecer{
@@ -136,11 +142,17 @@ main{
         line-height: 20px;
         text-align: center;
         margin-left: 1rem;  
+        padding-top: 1rem;
+    }
+
+    .parraIndex{
+        justify-content: start;
+       
     }
 
     .asideCarousel{
-        margin-left: 15rem;
-        margin-right: 15rem;
+        margin-left: 14rem;
+        margin-right: 14rem;
     }    
     
 }
@@ -182,13 +194,23 @@ main{
         color: black;
         font-weight: 100;
         text-align: center;
+
+    }
+
+    i{
+        font-size: large;
     }
 
     .imgProducto{
 
         width: 25rem; 
         height: 20rem;
-    }    
+    }
+
+    button {
+        background-color: rgb(161, 8, 8);
+
+    }
       
 }
 
@@ -534,5 +556,51 @@ main{
         align-items: center;  
     }
 
+}
+
+@media only screen and ( max-width: 992px){
+
+
+    .header{
+
+        height: 9rem;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 1rem;
+        padding-right: 3rem;
+        transition: height 1s;
+
+        &:hover{
+           height: 16rem;
+        }
+
+        &__imgVoldini{
+            width: 14rem;
+            height: 3rem;
+            margin-top: 2vw;
+            margin-left: 6rem;        
+        }
+    
+    }
+
+    main{
+
+        margin: 0;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+        text-align: center;
+       
+
+        .asideCarousel{
+            margin-left: 7rem;
+            margin-right: 7rem;
+        }    
+        
+    }   
 
 }

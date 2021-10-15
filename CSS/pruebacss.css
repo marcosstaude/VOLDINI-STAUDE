@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .header {
   background-image: linear-gradient(white, grey, #af0909);
   height: 6rem;
@@ -86,10 +91,13 @@ main {
     letter-spacing: 2.8px;
     line-height: 20px;
     text-align: center;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    padding-top: 1rem; }
+  main .parraIndex {
+    justify-content: start; }
   main .asideCarousel {
-    margin-left: 15rem;
-    margin-right: 15rem; }
+    margin-left: 14rem;
+    margin-right: 14rem; }
 
 .mainProductos {
   padding-left: 2rem;
@@ -114,9 +122,13 @@ main {
     color: black;
     font-weight: 100;
     text-align: center; }
+  .mainProductos i {
+    font-size: large; }
   .mainProductos .imgProducto {
     width: 25rem;
     height: 20rem; }
+  .mainProductos button {
+    background-color: #a10808; }
 
 .containerInnovacion, .flex-conteinerEmpresa {
   width: 90vw;
@@ -331,3 +343,32 @@ main {
     margin-top: 0rem;
     padding-top: 1rem;
     align-items: center; } }
+
+@media only screen and (max-width: 992px) {
+  .header {
+    height: 9rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+    padding-right: 3rem;
+    transition: height 1s; }
+    .header:hover {
+      height: 16rem; }
+    .header__imgVoldini {
+      width: 14rem;
+      height: 3rem;
+      margin-top: 2vw;
+      margin-left: 6rem; }
+  main {
+    margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    text-align: center; }
+    main .asideCarousel {
+      margin-left: 7rem;
+      margin-right: 7rem; } }
