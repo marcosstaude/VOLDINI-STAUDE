@@ -164,7 +164,7 @@ main{
     padding-right: 2rem;
 
     table{
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         margin-top: 2rem;
     }
 
@@ -203,8 +203,8 @@ main{
 
     .imgProducto{
 
-        width: 25rem; 
-        height: 20rem;
+        width: 20rem; 
+        height: 17rem;
     }
 
     button {
@@ -221,13 +221,12 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
-    padding: 0;
+
 
     &__p{
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
         padding-right: 5rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     &__imgInnovacion{
@@ -275,6 +274,10 @@ main{
         margin-top: 3rem;
         margin-left: 5rem;
 
+    }
+
+    .inputLlenar{
+        width: 11rem;
     }
 
     textarea{
@@ -431,7 +434,7 @@ main{
         padding-top: 16rem;
         padding-bottom: 2rem;
         text-align: center;
-        background-image: linear-gradient(rgb(211, 210, 210), rgb(155, 151, 151), rgb(12, 11, 11));
+        background-image: url(https://assets.zyrosite.com//YanbqgLWZMSj8BPL/grises-para-paginas-web-mxBQMoeJveFPN2Je.png);
 
         .asideCarousel{
             margin-left: 1rem;
@@ -447,6 +450,10 @@ main{
             height: 15rem;
         }    
 
+        h3{
+            padding-top: 1rem;
+        }
+
     }
 
     .containerInnovacion{
@@ -455,7 +462,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: 3rem 0;
+        margin: 1rem 0;
     
         &__p{
             margin-bottom: 0;
@@ -467,9 +474,9 @@ main{
         &__imgInnovacion{
 
             padding-top: 2rem;
-            margin-right: 1rem;
+            padding-left: 2rem;
             height: 15rem;
-            width: 15rem;
+            width: 20rem;
         }
     
     }
@@ -510,7 +517,7 @@ main{
         fieldset{
             font-family: sans-serif;
             padding: 1rem 1rem 1rem 1rem;
-            height: 48rem;
+            height: 45rem;
             width: 18rem;
             margin-top: 1rem;
             margin-left: 2rem;
@@ -558,12 +565,12 @@ main{
 
 }
 
-@media only screen and ( max-width: 992px){
-
-
+@media only screen and (min-width: 600px) {
+    
     .header{
 
-        height: 9rem;
+        background-image: linear-gradient(white, grey,);
+        height: 8rem;
         position: fixed;
         z-index: 10;
         top: 0;
@@ -574,16 +581,87 @@ main{
         margin-right: 1rem;
         padding-right: 3rem;
         transition: height 1s;
+        align-items: center;
 
         &:hover{
-           height: 16rem;
+           height: 9rem;
         }
 
         &__imgVoldini{
             width: 14rem;
             height: 3rem;
             margin-top: 2vw;
-            margin-left: 6rem;        
+            margin-left: 8rem;   
+
+        }
+    
+    }
+
+    .nav2{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        &__ul{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+        }
+    
+        &__li {
+            list-style: none;
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            margin: 0 1rem;
+        }
+    
+        &__a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif; 
+            
+            &:hover {
+                color: black;
+            }
+           
+        }      
+    
+        ul li:hover ul{
+    
+            display: block;
+            background-color: rgb(182, 174, 174);
+            font-family: sans-serif;
+            height: 5rem;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                height: 6rem;
+    
+                &:hover{
+                    color: red;            
+                }
+            }
+    
+        }
+    
+    
+        ul ul{
+            position: absolute;
+            display: none;
+    
+            li{
+                display: block;
+                
+            }    
+               
+        } 
+    
+        i{
+            color: black;
         }
     
     }
@@ -591,16 +669,389 @@ main{
     main{
 
         margin: 0;
-        padding-top: 8rem;
+        padding-top: 10rem;
         padding-bottom: 2rem;
         text-align: center;
-       
+        background-image: url(https://assets.zyrosite.com//YanbqgLWZMSj8BPL/grises-para-paginas-web-mxBQMoeJveFPN2Je.png);
 
         .asideCarousel{
-            margin-left: 7rem;
-            margin-right: 7rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
         }    
         
-    }   
+    }  
+    
+    .mainProductos{
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .imgProducto{
+
+            width: 12rem; 
+            height: 9rem;
+        }
+
+    }
+
+    .containerInnovacion{
+
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1rem 0;
+    
+        &__p{
+            margin-bottom: 0;
+            margin-right: 0;
+            padding: 0;
+            text-align: center;
+        }
+    
+        &__imgInnovacion{
+
+            padding-top: 2rem;
+            padding-left: 1rem;
+            height: 25rem;
+            width: 30rem;
+        }
+    }
+
+    .flex-conteinerEmpresa{
+    
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 1rem;
+    
+        p{
+            margin-bottom: 0;
+            margin-right: 0;
+            text-align: center;  
+        }
+    
+        video{
+            
+            height: 25rem;
+            width: 30rem;
+            padding-top: 0;
+            margin-left: 2rem;
+        }
+    
+    }
+
+    .formContacto{
+
+        text-align: left;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        fieldset{
+            font-family: sans-serif;
+            padding: 1rem 1rem 1rem 1rem;
+            height: 43rem;
+            width: 28rem;
+            margin-top: 1rem;
+            margin-left: 2rem;
+    
+        }
+    
+        textarea{
+            height: 10rem;
+            width: 15rem;
+        }
+    
+        &__p{
+            margin: 0;
+            font-size: 15px;
+            color: firebrick;
+            text-align: left;
+        }
+    
+        .form{
+            background-image: radial-gradient(white, grey);
+        }
+    
+        iframe{
+            height: 35rem;
+            width: 30rem;
+            padding-top: 3rem;
+            padding-left: 2rem;
+    
+        }
+    
+    }
+
+    .footer{
+        height: 7rem;
+        text-align: center;
+        background-color: rgb(168, 168, 168);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0rem;
+        padding-top: 1rem;
+        align-items: center;  
+
+        h2{
+        
+            text-align: left;
+            position: relative;     
+        }
+        
+        &__Parrafos{
+            
+            text-align: right;
+            margin: 0;
+            
+        }
+    
+        i{
+            color: black;
+            font-size: 2rem;
+           
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .header{
+
+        background-image: linear-gradient(white, grey, rgb(175, 9, 9));
+        height: 6rem;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 1rem;
+        padding-right: 3rem;
+        transition: height 1s;
+    
+        &:hover{
+            height: 7rem;
+        }
+    
+        &__imgVoldini{
+            width: 14rem; 
+            height: 3rem;
+            margin-top: 1vw;
+            margin-left: 2rem;
+            
+        }
+    
+    }
+
+    .nav2{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1rem;
+    
+        &__ul{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+        }
+    
+        &__li {
+            list-style: none;
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            margin: 0 1rem;
+        }
+    
+        &__a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif; 
+            
+            &:hover {
+                color: black;
+            }
+           
+        }      
+    
+        ul li:hover ul{
+    
+            display: block;
+            background-color: rgb(182, 174, 174);
+            font-family: sans-serif;
+            height: 5rem;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                height: 6rem;
+    
+                &:hover{
+                    color: red;            
+                }
+            }
+    
+        }
+    
+    
+        ul ul{
+            position: absolute;
+            display: none;
+    
+            li{
+                display: block;
+                
+            }    
+               
+        } 
+    
+        i{
+            color: black;
+        }
+    
+    }
+
+    main{
+
+        margin: 0;
+        padding-top: 9rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        background-image: url(https://assets.zyrosite.com//YanbqgLWZMSj8BPL/grises-para-paginas-web-mxBQMoeJveFPN2Je.png);
+
+        .asideCarousel{
+            margin-left: 13rem;
+            margin-right: 13rem;
+        }    
+        
+    }  
+    
+    .mainProductos{
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .imgProducto{
+
+            width: 20rem; 
+            height: 17rem;
+        }
+
+    }
+    
+    .containerInnovacion{
+
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    
+        &__p{
+            padding-bottom: 2rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+        }
+    
+        &__imgInnovacion{
+            height: 45%;
+            width: 40%;
+        }
+    
+    }
+
+    .flex-conteinerEmpresa{
+    
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+    
+        &__p{
+            padding-bottom: 5rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            text-align: center;  
+        }
+    
+        video{
+            
+            height: 25rem;
+            width: 30rem;
+            padding-top: 0;
+            margin-left: 2rem;
+        }
+    
+    } 
+
+    .formContacto{
+
+        text-align: left;
+        margin: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: row;
+    
+        fieldset{
+            font-family: sans-serif;
+            padding: 2rem 2rem 2rem 2rem;
+            height: 50rem;
+            width: 25rem;
+            margin-top: 3rem;
+            margin-left: 5rem;
+    
+        }
+    
+        textarea{
+            height: 15rem;
+            width: 20rem;
+        }
+    
+        &__p{
+            margin: 0;
+            font-size: 15px;
+            color: firebrick;
+            text-align: left;
+        }
+    
+        .form{
+            background-image: radial-gradient(white, grey);
+        }
+    
+        iframe{
+            height: 49rem;
+            width: 42rem;
+            padding-top: 1rem;
+            padding-left: 4rem;
+        }
+    
+    }
+    
+    .footer{
+    
+        height: 5rem;
+        background-image: linear-gradient( grey, white);
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: black;
+        font-family: sans-serif;
+    }
 
 }
