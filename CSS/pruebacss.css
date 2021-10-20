@@ -78,6 +78,12 @@ main {
     animation-name: aparecer;
     animation-duration: 2s;
     color: black; }
+  main #imgTricicloIndex {
+    height: 600px; }
+  main #imgBiciIndex {
+    height: 600px; }
+  main #imgMonopatinIndex {
+    height: 600px; }
 
 @keyframes aparecer {
   0% {
@@ -251,9 +257,10 @@ main {
       font-family: sans-serif; }
     .nav2 ul li:hover ul {
       display: block;
-      background-color: #ccc4c4;
+      background-image: linear-gradient(#838080, #f0ecec);
       font-family: sans-serif;
-      color: black; }
+      height: 5rem;
+      width: 8rem; }
     .nav2 ul ul {
       position: absolute;
       display: none; }
@@ -270,6 +277,12 @@ main {
     main .asideCarousel {
       margin-left: 1rem;
       margin-right: 1rem; }
+    main #imgTricicloIndex {
+      height: 17rem; }
+    main #imgBiciIndex {
+      height: 17rem; }
+    main #imgMonopatinIndex {
+      height: 17rem; }
   .mainProductos .imgProducto {
     width: 20rem;
     height: 15rem; }
@@ -391,9 +404,10 @@ main {
         color: black; }
     .nav2 ul li:hover ul {
       display: block;
-      background-color: #b6aeae;
+      background-image: linear-gradient(#838080, #f0ecec);
       font-family: sans-serif;
-      height: 5rem; }
+      height: 5rem;
+      width: 8rem; }
       .nav2 ul li:hover ul a {
         text-decoration: none;
         color: black;
@@ -548,9 +562,10 @@ main {
         color: black; }
     .nav2 ul li:hover ul {
       display: block;
-      background-color: #b6aeae;
+      background-image: linear-gradient(#838080, #f0ecec);
       font-family: sans-serif;
-      height: 5rem; }
+      height: 5rem;
+      width: 8rem; }
       .nav2 ul li:hover ul a {
         text-decoration: none;
         color: black;
