@@ -361,7 +361,7 @@ main {
 
 @media only screen and (min-width: 600px) {
   .header {
-    background-image: linear-gradient(white, grey);
+    background-image: linear-gradient(white, grey, #af0909);
     height: 8rem;
     position: fixed;
     z-index: 10;
